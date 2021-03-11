@@ -74,3 +74,15 @@ def phase_name_maker(load_a: list, load_b: list, load_c: list, n: int) -> list:
         if load_c[i]:
             phase_list[i] = "C"
     return phase_list
+
+
+def callback(input_string: str) -> bool:
+    """Checks that input string consists of the given characters [char_set]"""
+    char_set = "0123456789. "
+    if input_string == '':
+        return True
+    fl = True
+    for c in input_string:
+        if c not in char_set:
+            fl = False
+    return fl
