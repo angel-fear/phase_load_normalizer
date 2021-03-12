@@ -63,19 +63,6 @@ def restore(x: list, in_input: list, n: int):
                 break
 
 
-def phase_name_maker(load_a: list, load_b: list, load_c: list, n: int) -> list:
-    """Creates list of phases names in the order of input lists"""
-    phase_list = [''] * n
-    for i in range(n):
-        if load_a[i]:
-            phase_list[i] = "A"
-        if load_b[i]:
-            phase_list[i] = "B"
-        if load_c[i]:
-            phase_list[i] = "C"
-    return phase_list
-
-
 def callback(input_string: str) -> bool:
     """Checks that input string consists of the given characters [char_set]"""
     char_set = "0123456789. "
