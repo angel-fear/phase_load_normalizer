@@ -12,6 +12,8 @@ The program is designed to equalize **single-phase** loads and calculate the asy
 * Decimal separator - *dot*.
 * The separator between values - *space*.
 
+**Requires an installed xlsxwriter library.**
+
 
 #### General operating principle
 At the first stage, the next value from the sorted list of single-phase loads is placed on the least loaded phase. The second stage is an attempt to minimize the unevenness of the load by swapping the loads between adjacent phases.
